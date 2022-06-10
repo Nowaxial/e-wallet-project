@@ -1,38 +1,333 @@
 .App {
-  text-align: center;
+text-align: center;
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 414px;
+  height: 896px;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.card {
+
+  width: 75%;
+  position: relative;
+  width: 382px;
+  height: 241px;
+  margin: 10px auto;
+
+  background: linear-gradient(248.3deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%), #D0D0D0;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  align-items: center;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardnumber input {
+  position: relative;
+  width: 382px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: large;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardnumber  {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+}
+
+.cardnumber label {
+  font-size: 13px;
+  font-style: normal;
+}
+
+.cardname {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  height: 30px;
+  text-align: left;
+}
+
+.cardname label {
+  font-size: 13px;
+  font-style: normal;
+}
+
+.cardname input {
+  position: relative;
+  width: 382px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: large;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+.validCcvName {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.validText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+  top: 17px;
+}
+
+.ccvText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+  padding-left: 380px;
+  
+}
+
+#validthru {
+  position: relative;
+  width: 185px;
+  height: 30px;
+  
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  
+}
+
+#ccv {
+  position: relative;
+  width: 185px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.vendors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  height: 30px;
+  text-align: left;
+
+}
+
+#vendor {
+  position: relative;
+  width: 382px;
+  height: 56px;
+  margin: 0 auto;
+  font-size: large;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: -16px;
+
+
+
+}
+
+
+
+.cardchip  {
+  position: absolute;
+  display: flex;
+  align-items: left;
+  padding: 15px 0 0 15px;
+}
+
+.cardMaker {
+  position: absolute;
+  left: 84.33%;
+  right: 10%;
+  top: 18.53%;
+  bottom: 77.16%;
+}
+
+.nameMonthText {
+  display: flex;
+  top: 50px;
+}
+
+.cardValidThru {
+  width: 50%;
+  margin-left: 63%;
+}
+
+.cardHolder  {
+  width: 50%;
+  margin-left: 6%;
+}
+
+.cardHolderNumber {
+  padding-top: 120px;
+  font-size: 30px;
+
+}
+
+
+.yymm {
+  position: relative;
+  font-size: 9px;
+  margin-top: -20px;
+  padding-left: 1px;
+  text-transform: uppercase;
+}
+
+.cardValidThru {
+  position: relative;
+  margin-top: -10px;
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
+.addButton{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
   color: white;
+  background-color: black;
+  height: 50px;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.addNewButton{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: white;
+  height: 50px;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.cardHname {
+  position: relative;
+  font-size: 9px;
+  margin-top: -15px;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
+
+.cardHolder {
+  position: relative;
+  margin-top: -10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  
+  position: absolute;
+  width: auto;
+  height: 32px;
+  word-break: keep-all;
+  white-space: nowrap;
+
+}
+
+
+
+.Blockchain {
+  background-color: #7f51e3 !important;
+}
+
+.Bitcoin {
+  background-color: #ffb444 !important;
+}
+
+.Ninja {
+  background-color: #333333 !important;
+  color: #bbbbbb !important;
+}
+
+.Evil {
+  background-color: #db2f4e !important;
+}
+
+
+
+
+
+.cardStack-component {
+  position: relative;
+  top: 52%;
+  height:38.5%;
+  width:100%;
+  min-width: inherit;
+  
+}
+
+.cardStack-section {
+  display: grid;
+  grid-auto-rows: 2.6rem;
+} 
+
+
+.cardStack .movingCard {
+  top: -290px !important;
+  z-index: 10001 !important;
+}
+
+.cardStack .movingCard .cardNumber {
+  top: 120px !important;
+}
+
+.cardStack .card:not(:last-child):hover .cardNumber {
+  top: 10px !important;
+}
+
+.selected .deleteCard {
+  
+  display: unset;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.selected:hover .deleteCard {
+  
+  opacity: 1;
+}
+
+.selected {
+  z-index: 10000;
+}
+
+
