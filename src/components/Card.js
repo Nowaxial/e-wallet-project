@@ -36,7 +36,7 @@ function Card(props) {
     }
 
     function selectThisCard(){
-        selectCard(card,index)
+        selectCard(card,index,true)
     }
     
      
